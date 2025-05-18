@@ -15,8 +15,8 @@ const Footer = () => {
                 {/* Menu */}
                 <ul className="nav">
                     <li className="nav-item"><a className="nav-link text-dark" href="#">Home</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">Service</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">Blogs</a></li>
+                    <li className="nav-item"><a className="nav-link text-dark" href="#">Products</a></li>
+                    <li className="nav-item"><a className="nav-link text-dark" href="#">Education</a></li>
                     <li className="nav-item"><a className="nav-link text-dark" href="#">About</a></li>
                     <li className="nav-item"><a className="nav-link text-dark" href="#">Contact</a></li>
                 </ul>
