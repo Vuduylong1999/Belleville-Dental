@@ -1,6 +1,9 @@
 import React from 'react';
 import lastest from "../assets/lastest-technology.jpg";
 import doctor from "../assets/doctor.jpg";
+import bren from "../assets/bren.png";
+import ashish from "../assets/ashish.png";
+import james from "../assets/james.png";
 import { Container, Row, Col } from 'react-bootstrap';
 
 const AboutUs = () => {
@@ -40,6 +43,87 @@ const AboutUs = () => {
                         </Col>
                     </Row>
                 </Col>
+
+
+                <Col md={12} className="mt-4 py-5">
+                    <h2 className="text-center">Meet our specialists</h2>
+                    <p className="text-center">
+                        We use only the best quality materials on the market in order to provide the best products to our patients.
+                    </p>
+                    <Col>
+                        <Row className="mt-4">
+                            <Col md={6}
+                                className="d-flex justify-content-center align-items-center"
+                                style={{ border: 'none' }}>
+                                <img
+                                    src={bren}
+                                    alt="Dental Technology"
+                                    className="img-fluid rounded"
+                                    style={{
+                                        maxHeight: '300px'
+                                    }}
+                                />
+                            </Col>
+                            <Col md={6}>
+                                <h3>Dr. Brent</h3>
+                                <p>
+                                    ( Specility in General & Cosmetic Service )
+                                    <br /><br />
+                                    Dr. Brent provides general and cosmetic dentistry services at Northern Heights Dental in Flagstaff, Arizona. He has extensive experience in general and cosmetic dentistry, including full mouth restoration, dental veneers, crowns, bridges, dental implants, wisdom teeth extractions, Invisalign, and dentures.  Dr. Brent and his younger sister grew up in Massachusetts with a mother who worked as a hygienist and a grandfather who was a general dentist.
+                                </p>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Row className="mt-4 py-3">
+                            <Col md={6}
+                                className="d-flex justify-content-center align-items-center"
+                                style={{ border: 'none' }}>
+                                <img
+                                    src={ashish}
+                                    alt="Dental Technology"
+                                    className="img-fluid rounded"
+                                    style={{
+                                        maxHeight: '300px'
+                                    }}
+                                />
+                            </Col>
+                            <Col md={6}>
+                                <h3>Dr. Ashish J. Vashi</h3>
+                                <p>
+                                    ( Specility in implant dentistry )
+                                    <br /><br />
+                                    Dr. Ashish J. Vashi has been practicing general, cosmetic and implant dentistry in California for over 18 years. He believes in giving the highest quality dentistry in a comfortable, caring environment. He strives to get to know his patients, not just their teeth.including full mouth restoration, dental veneers, crowns, bridges, dental implants, wisdom teeth extractions, Invisalign, and dentures.
+                                </p>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Row className="mt-4">
+                            <Col md={6}
+                                className="d-flex justify-content-center align-items-center"
+                                style={{ border: 'none' }}>
+                                <img
+                                    src={james}
+                                    alt="Dental Technology"
+                                    className="img-fluid rounded"
+                                    style={{
+                                        maxHeight: '300px'
+                                    }}
+                                />
+                            </Col>
+                            <Col md={6}>
+                                <h3>Dr. James Connors</h3>
+                                <p>
+                                    ( Specility in Oral Surgeon )
+                                    <br /><br />
+                                    When it comes to oral surgeons, few can compare to the modern-day legend that is Dr. James Connors. As our oral and maxillofacial surgery specialist, Dr. Connors will brighten your day with his seasoned expertise, welcoming conversations, and – of course – his signature rotation of fun bowties. Dr. Connors and his younger sister grew up in Massachusetts with a mother who worked as a hygienist and a grandfather who was a general dentist.
+                                </p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Col>
+
 
                 <Col md={12} className="mt-4 py-5">
                     <h2 className="text-center">Latest Technology</h2>
