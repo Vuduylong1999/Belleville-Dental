@@ -136,7 +136,7 @@
     background-color: #f2f2f2;
 }
 .w-856{
-    width: 856px;
+    width: 830px;
 }
 .anh-hover{
      transition: transform 0.3s ease;
@@ -144,4 +144,17 @@
 .anh-hover:hover{
     transform: scale(1.4);
     border: 1px solid #28befa;
+}
+.blogs{
+    font-size: 62px;
+    font-weight: 600;
+}
+.mo-ta{
+    font-size: 18px;
+    font-weight: 400;
+}
+.khung-blogs{
+    width: 450px;
+    height: 150px;
+    margin: auto;
 }

@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import DetailProduct from './DetailProduct';
+import Blog from './blog';
 
 function NotFound (){
     return <h1 className='text-center font-bold'> 404 - Not Found </h1>
@@ -17,6 +18,7 @@ export default function AppRouter() {
         <Route path='/contact-us' element={<ContactUs></ContactUs>} ></Route>
         <Route path='/details' element={<DetailProduct></DetailProduct>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>
+        <Route path='/blog'  element={<Blog></Blog>} ></Route>
 
       </Routes>
     </>

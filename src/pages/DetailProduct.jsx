@@ -135,7 +135,7 @@ export default function DetailProduct() {
                     </div>
                     <div className="row khung-chi-tiet mt-4 w-856 mx-1" >
                         <div className="col-6 " >
-                            <p className="thanh-tieu-de mt-2 mx-3" >Thông tin sản phẩm</p>
+                            <p className="thanh-tieu-de mt-2 " >Thông tin sản phẩm</p>
                             <ul className="thong-tin-san-pham" >
                                 <li>Mới, đầy đủ phụ kiện từ nhà sản xuất</li>
                                 <li>1 x Thân bàn chải, 1 x Đầu bàn chải, 1 x Dây sạc USB-C, 1 x Hướng dẫn sử dụng</li>
@@ -156,7 +156,7 @@ export default function DetailProduct() {
                     </div>
 
                 </div>
-                <div className="col-4 mx-5" >
+                <div className="col-4 mx-" >
                     <div className="d-flex gap-2 " >
                         <p className="gia-giam" >379.000đ</p>
                         <p className="gia-goc" >900.000đ</p>
@@ -283,7 +283,7 @@ export default function DetailProduct() {
                     </div>
                 </div>
                 <div className="col-4 " >
-                    <div className="khung-chi-tiet2 mt-4">
+                    <div className="khung-chi-tiet2 mt-4 ">
                         <p className="fw-semibold p-3" >Thông số kỹ thuật</p>
                         <div className="" >
                             <div className="bg-thong-so-ky-thuat d-flex gap-3 hustify-content-center p-2">
