@@ -17,37 +17,37 @@ export default function Blog() {
         {
             title: "Care of your Teeth",
             author: "Anita Jackson",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         {
             title: "Dental Checkup",
             author: "John Doe",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         {
             title: "Healthy Smile",
             author: "Jane Smith",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         {
             title: "Healthy Smile",
             author: "Jane Smith",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         {
             title: "Healthy Smile",
             author: "Jane Smith",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         {
             title: "Healthy Smile",
             author: "Jane Smith",
-            img: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaKj0sbOI0nrVXLnFYC2anaYF2nF4meK00njokXMzoA98ouMfN4BQbu36-EkTtgrnH8KnYOl9R6fep9RMmPnUQglS7EkCvJ2cmwQBKHnc5OSVn6R5DAtfeBmLorbzQjIqT-O-oQhjvzDbBbISlzSb0lhaC?key=tE_qip6BHPL4g00JXL_X6Q",
+            img: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-meo-ngau-43.jpg",
             tag: "Self Care",
         },
         // Thêm card tùy ý
