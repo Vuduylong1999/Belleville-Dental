@@ -5,6 +5,7 @@ import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import DetailProduct from './DetailProduct';
 import DentalHomePage from './Home';
+import Products from './Products';
 
 function NotFound (){
     return <h1 className='text-center font-bold'> 404 - Not Found </h1>
@@ -15,6 +16,7 @@ export default function AppRouter() {
     <>
       <Routes>
         <Route path='/' element={<DentalHomePage></DentalHomePage>} ></Route>
+        <Route path='/products' element={<Products></Products>} ></Route>
         <Route path='/about-us' element={<AboutUs></AboutUs>} ></Route>
         <Route path='/contact-us' element={<ContactUs></ContactUs>} ></Route>
         <Route path='/details' element={<DetailProduct></DetailProduct>} ></Route>
