@@ -1,28 +1,53 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import avatar from "../assets/avatar.png";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+    const location = useLocation(); // Get the current location
+    // Example: Change color based on path
+    let bgColor = "rgba(255, 255, 255, 1)"; // default
+    if (location.pathname === "/home" || location.pathname === "/") {
+        bgColor = "rgba(230, 246, 254, 1)";
+    }
     return (
-        <nav className="navbar sticky-top px-4 py-2 rounded p-1 " style={{ backgroundColor: '#eaf6ff' }}>
+        <nav className="navbar sticky-top px-4 py-2 rounded p-1  " style={{ backgroundColor: bgColor }}>
             <div className="container-fluid d-flex justify-content-between align-items-center">
 
                 {/* Logo bên trái */}
-                <Link className="navbar-brand d-flex align-items-center" to="/">
+                <Link className="navbar-brand d-flex align-items-center" to="/home">
                     <img src={logo} alt="uifry logo" height="30" className="me-2" />
                 </Link>
 
                 {/* Menu giữa */}
                 <ul className="navbar-nav flex-row gap-4">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">Home</Link>
+                        <Link className="nav-link" to="/home">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/products">Products</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/education">Education</Link>
+                    <li className="nav-item dropdown position-relative">
+                        <a
+                            className="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Education
+                        </a>
+                        <ul className="dropdown-menu position-absolute">
+                            <li>
+                                <Link className="dropdown-item" to="/education/professional">Professional</Link>
+                            </li>
+                            <li>
+                                <Link className="dropdown-item" to="/education/patient">Patient</Link>
+                            </li>
+                            <li>
+                                <Link className="dropdown-item" to="/education/researchs">Researchs</Link>
+                            </li>
+                        </ul>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/about-us">About</Link>

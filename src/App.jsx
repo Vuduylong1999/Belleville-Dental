@@ -5,19 +5,20 @@ import AppRouter from './pages'
 import Header from './components/Header'
 import Footer from './components/Footer'
 function App() {
-  
+
 
   return (
     <>
-      <div className="container-fluid">
-        <div className='container'>
-          <Header />
-          {/*  Main content */}
-          <AppRouter/>
-          <Footer />
 
-        </div>
-      </div>
+
+      <Header />
+      {/*  Main content */}
+        <AppRouter />
+
+      <Footer />
+
+
+
     </>
   )
 }

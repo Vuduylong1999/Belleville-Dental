@@ -7,6 +7,7 @@ import DetailProduct from './DetailProduct';
 import Blog from './blog';
 import DentalHomePage from './Home';
 import Products from './Products';
+import BlogEducation from './BlogEducation';
 
 
 function NotFound (){
@@ -17,7 +18,10 @@ export default function AppRouter() {
   return (
     <>
       <Routes>
+        
         <Route path='/' element={<DentalHomePage></DentalHomePage>} ></Route>
+        <Route path='/home' element={<DentalHomePage></DentalHomePage>} ></Route>
+        <Route path='/education/professional' element={<BlogEducation></BlogEducation>} ></Route>
         <Route path='/products' element={<Products></Products>} ></Route>
         <Route path='/about-us' element={<AboutUs></AboutUs>} ></Route>
         <Route path='/contact-us' element={<ContactUs></ContactUs>} ></Route>
