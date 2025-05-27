@@ -1,0 +1,27 @@
+<website>
+    <page name="Homepage" />
+    <page name="About Us">
+        <subpage name="Our Mission" />
+        <subpage name="Our Specialists" />
+        <subpage name="Our Technology" />
+    </page>
+    <page name="Contact Us">
+        <subpage name="Our Contact Info" />
+        <subpage name="Booking" />
+    </page>
+    <page name="Articles">
+        <subpage name="Blog Posts" />
+        <subpage name="Dental Technology" />
+    </page>
+    <page name="Research & Education">
+        <subpage name="Posts" />
+        <subpage name="How to Protect Your Teeth" />
+        <subpage name="Planning to Protect Your Teeth" />
+    </page>
+    <page name="Products">
+        <subpage name="Toothpaste" />
+        <subpage name="Brushes" />
+        <subpage name="Electrical Accessories" />
+        <subpage name="Kid's Products" />
+    </page>
+</website>
