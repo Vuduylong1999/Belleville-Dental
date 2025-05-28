@@ -1,171 +1,319 @@
-.thanh-tieu-de{
+.thanh-tieu-de {
     font-weight: 600;
     font-size: 25px;
 }
-.thanh-ngang-giua{
+
+.thanh-ngang-giua {
     border: 1px solid rgb(226, 223, 223);
 }
-.bg-hong{
+
+.bg-hong {
     background: linear-gradient(90deg, #dd5e89, #f7bb97);
 }
-.khung-ban-chai{
+
+.khung-ban-chai {
     width: 706px;
     margin-right: 20px;
     position: relative;
     height: 350px;
     border-radius: 18px;
-    
+
 }
-.img-banChai1{
+
+.img-banChai1 {
     width: 220px;
     height: 220px;
     position: absolute;
     top: 60px;
     left: 20px;
-    
+
 }
-.tinh-nang-noi-bat{
+
+.tinh-nang-noi-bat {
     position: absolute;
     top: 20px;
     right: 120px;
 }
-.boder-khung{
+
+.boder-khung {
     width: 400px;
     height: 400px;
-    
+
     position: absolute;
     top: 10px;
     right: 50px;
 }
-.chu-trong-khung-ban-chai{
+
+.chu-trong-khung-ban-chai {
     position: absolute;
     top: 45px;
 }
-.khung-ban-chai2{
-     width: 706px;
+
+.khung-ban-chai2 {
+    width: 706px;
     margin-right: 20px;
     border: 1px solid rgb(196, 190, 190);
     height: 350px;
     border-radius: 18px;
 }
-.ban-chai2{
+
+.ban-chai2 {
     height: 100%;
     width: auto;
-    padding-left:170px ;
+    padding-left: 170px;
 }
-.thong-tin-san-pham{
-  font-size: 17px;
-    
+
+.thong-tin-san-pham {
+    font-size: 17px;
+
 }
-.bg-white{
+
+.bg-white {
     background-color: rgb(255, 254, 254);
 }
-.gia-giam{
+
+.gia-giam {
     color: red;
     font-size: 25px;
     font-weight: 600;
 }
-.gia-goc{
+
+.gia-goc {
     text-decoration: line-through;
     font-weight: 100;
     font-size: 15px;
 }
-.xanh-duong{
+
+.xanh-duong {
     font-weight: 500;
     margin-bottom: 10px;
 }
-.gia-xanh-duong{
+
+.gia-xanh-duong {
     color: #dd5e89;
 }
-.khung-xanh-duong{
+
+.khung-xanh-duong {
     border: 1px solid rgb(207, 198, 198);
     height: 80px;
     border-radius: 12px;
     box-sizing: border-box;
     width: 190px;
 }
-.khung-xanh-duong:hover{
+
+.khung-xanh-duong:hover {
     border: 1px solid red;
 }
-.gio-hang{
+
+.gio-hang {
     width: 70px;
     height: 70px;
 }
-.bg-mua-ngay{
+
+.bg-mua-ngay {
     background: linear-gradient(#f52f32, #e11b1e);
     border-radius: 12px;
 }
-.bg-tra-gop{
+
+.bg-tra-gop {
     background: linear-gradient(180deg, #3a78d0, #277cea);
     color: white;
     border-radius: 12px;
 }
-.bg-mua-ngay:hover{
+
+.bg-mua-ngay:hover {
     background: linear-gradient(#bbaaab, #b80105);
     cursor: pointer;
 }
-.bg-tra-gop:hover{
-    background:  linear-gradient(180deg, #0f52af, #277cea);
+
+.bg-tra-gop:hover {
+    background: linear-gradient(180deg, #0f52af, #277cea);
     cursor: pointer;
 }
-.bg-uu-dai-them{
-    background-color:#d1d5db;
+
+.bg-uu-dai-them {
+    background-color: #d1d5db;
     padding: 10px;
 
 }
-.boder-khung-uu-dai{
+
+.boder-khung-uu-dai {
     border: 1px solid rgb(219, 215, 215);
     background-color: #f2f2f2;
     border-radius: 12px;
 }
-.bg-khung-noi-bat{
+
+.bg-khung-noi-bat {
     background-color: #f2f2f2;
     border-radius: 12px;
-   
+
 }
-.khung-chi-tiet{
-     box-shadow: 0 3px 4px 6px rgba(0, 0, 0, 0.1);
-     border-radius: 12px;
+
+.khung-chi-tiet {
+    box-shadow: 0 3px 4px 6px rgba(129, 125, 125, 0.1);
+    border-radius: 12px;
 }
-.khung-chi-tiet2{
-     border: 1px solid rgb(219, 215, 215);
-     border-radius: 12px;
-     height: auto;
+
+.khung-chi-tiet2 {
+    border: 1px solid rgb(219, 215, 215);
+    border-radius: 12px;
+    height: auto;
 }
-.bg-thong-so-ky-thuat{
+
+.bg-thong-so-ky-thuat {
     background-color: #f2f2f2;
 }
-.w-856{
+
+.w-856 {
     width: 830px;
 }
-.anh-hover{
-     transition: transform 0.3s ease;
+
+.anh-hover {
+    transition: transform 0.3s ease;
 }
-.anh-hover:hover{
+
+.anh-hover:hover {
     transform: scale(1.4);
     border: 1px solid #28befa;
 }
-.blogs{
+
+.blogs {
     font-size: 62px;
     font-weight: 600;
 }
-.mo-ta{
+
+.mo-ta {
     font-size: 18px;
     font-weight: 400;
 }
-.khung-blogs{
+
+.khung-blogs {
     width: 450px;
     height: 150px;
     margin: auto;
 }
-.mua-ngay-blog{
+
+.mua-ngay-blog {
     border: none;
     border-radius: 12px;
     color: white;
     background-color: rgb(37, 175, 90);
+    margin-left: 10px;
 }
-.mua-ngay-blog:hover{
+
+.mua-ngay-blog:hover {
     background-color: rgb(107, 138, 107);
+
+
+}
+
+.articles {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.bg-free {
+    background: #EBF2FC;
+    border-radius: 8px;
+    padding: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.bg-free:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bg-tui-sach {
+    background: #FAE9EF;
+}
+
+.bg-chung-nhan {
+    background: #FFFBDB;
+}
+
+.bg-hotline {
+    background: #E9FFE3;
+}
+
+.anh-to {
+    width: 100%;
+
+
+}
+
+.anh-nen-hong {
+    width: 200px;
+    height: 150px;
+}
+
+.bg-sale {
+    border-radius: 12px;
+    background: linear-gradient(180deg, #BF1E2E 0%, #cc0c09 50%, #fa2c29 100%);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.pr-san-pham {
+    position: relative;
+}
+
+.giam-41 {
+    position: absolute;
+    top: 7px;
+    color: rgb(255, 255, 255);
+    background: #e31934;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tra-gop-0 {
+
+    position: absolute;
+    bottom: 290px;
+    color: rgb(255, 255, 255);
+    background: #e31934;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.bao-hanh-12 {
+
+    position: absolute;
+    bottom: 260px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    background: #e31934;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.img-hover {
+    transition: transform 0.3s ease;
+    /* Hiệu ứng chuyển đổi mượt */
+    cursor: pointer;
+    /* C  /* bo góc */
+    box-shadow: 0 8px rgba(219, 213, 213, 0.1); /* bóng đổ mềm */
     
-    
+     
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.img-hover:hover{
+    transform: scale(1.1); /* Phóng to ảnh lên 110% */;
+}
+.tam-nuoc-to{
+    object-fit: hidden;
+}
+.anh-to{
+    width: 100%;
+    height: 800px;
 }
