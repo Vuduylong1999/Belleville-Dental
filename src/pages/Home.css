@@ -1,0 +1,32 @@
+.circle-border {
+  border: 2px dashed #3f82f7;
+  border-radius: 50%;
+}
+
+.tooth-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #15b9ff; /* nền xanh */
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(21, 185, 255, 0.5); /* hiệu ứng glow */
+  z-index: 1;
+}
+
+.tooth-icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Vị trí tương ứng của mỗi icon */
+.tooth-1 { top: 0%; left: 50%; }
+.tooth-2 { top: 20%; left: 85%; }
+.tooth-3 { top: 50%; left: 100%; }
+.tooth-4 { top: 80%; left: 85%; }
+.tooth-5 { top: 100%; left: 50%; }
+.tooth-6 { top: 80%; left: 15%; }
+.tooth-7 { top: 20%; left: 15%; }
