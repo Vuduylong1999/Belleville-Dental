@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import DetailProduct from './DetailProduct';
-import Blog from './blog';
+import Blog from './Blog';
 import DentalHomePage from './Home';
 import Products from './Products';
 import BlogEducation from './BlogEducation';
