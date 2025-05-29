@@ -6,17 +6,9 @@ import ContactUs from './ContactUs';
 import DetailProduct from './DetailProduct';
 import Blog from './blog';
 import DentalHomePage from './Home';
-<<<<<<< HEAD
-// <<<<<<< HEAD
-import Products from './Products';
-// =======
-// >>>>>>> 3062eff1d59323062f7583cc784130a2cc318ce1
-// >>>>>>> 5156e45e81384460e98c3b6e14d4b32f46a7980e
-=======
 import Products from './Products';
 import BlogEducation from './BlogEducation';
 
->>>>>>> 96263a70111cf46de1d33e5eb8ce4ddac84dc1e5
 
 function NotFound (){
     return <h1 className='text-center font-bold'> 404 - Not Found </h1>
