@@ -1,15 +1,15 @@
 import React from 'react';
 // config-route B2: Sử dụng Routes và Route để gán các path tương ứng 
 import { Routes, Route } from 'react-router-dom';
-import AboutUs from './AboutUs';
-import ContactUs from './ContactUs';
-import DetailProduct from './DetailProduct';
-import Blog from './Blog';
-import DentalHomePage from './Home';
-import Products from './Products';
-import BlogEducation from './BlogEducation';
-import PatientEdu from './PatientEdu';
-import BlogSingle from '../components/edu/BlogSingle';
+import AboutUs from './AboutUs.jsx';
+import ContactUs from './ContactUs.jsx';
+import DetailProduct from './DetailProduct.jsx';
+import Blog from './Blog.jsx';
+import DentalHomePage from './Home.jsx';
+import Products from './Products.jsx';
+import BlogEducation from './BlogEducation.jsx';
+import PatientEdu from './PatientEdu.jsx';
+import BlogSingle from '../components/edu/BlogSingle.jsx';
 
 function NotFound() {
   return <h1 className='text-center font-bold'> 404 - Not Found </h1>
