@@ -100,7 +100,11 @@
     box-sizing: border-box;
     width: 190px;
 }
-
+.carousel-img {
+    width: 100%;
+    height: 900px;
+    object-fit: fill;
+}
 .khung-xanh-duong:hover {
     border: 1px solid red;
 }
