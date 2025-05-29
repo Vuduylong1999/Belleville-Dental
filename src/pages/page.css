@@ -100,7 +100,11 @@
     box-sizing: border-box;
     width: 190px;
 }
-
+.carousel-img {
+    width: 100%;
+    height: 900px;
+    object-fit: fill;
+}
 .khung-xanh-duong:hover {
     border: 1px solid red;
 }
@@ -248,9 +252,14 @@
 
 .bg-sale {
     border-radius: 12px;
-    background: linear-gradient(180deg, #BF1E2E 0%, #cc0c09 50%, #fa2c29 100%);
+    background: linear-gradient(180deg, #0d6efd 0%, #cc0c09 90%, #fa2c29 100%);
     overflow: hidden;
     padding: 20px;
+}
+
+.icon-flash-sale {
+    width: 40px;
+    height: 40px;
 }
 
 .pr-san-pham {
