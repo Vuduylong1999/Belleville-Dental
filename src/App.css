@@ -1,0 +1,6 @@
+/* Add padding to main content to prevent navbar overlap */
+.main-content {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+
+/* ...existing code... */

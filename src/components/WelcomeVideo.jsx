@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import './WelcomeVideoSection.css'; // Correctly import your CSS file
+import './styles/WelcomeVideoSection.css'; // Correctly import your CSS file
 import VideoSection from '../img/videosection.png'; // Adjust the path as necessary
 const WelcomeVideoSection = () => {
     return (

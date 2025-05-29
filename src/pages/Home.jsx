@@ -13,7 +13,7 @@ import Linkedin from '../assets/linkedin.png';
 const DentalHomePage = () => {
   return (
     <div className="font-sans text-gray ">
-       <section className="py-5 bg-primary bg-opacity-10">
+       <section className="py-5 bg-primary bg-opacity-10">  
         <div className="container">
           <div className="row align-items-center">
             

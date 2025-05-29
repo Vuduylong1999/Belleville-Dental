@@ -1,0 +1,16 @@
+.page-banner {
+  position: relative;
+  overflow: hidden;
+  margin-top: -90px; /* Adjust this value based on your header height */
+  padding-top: 120px; /* This should be larger than your header height */
+}
+.page-banner .overlay {
+  background: rgba(0, 153, 204, 0.6); /* blue overlay */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-banner .container {
+  z-index: 2;
+  position: relative;
+}

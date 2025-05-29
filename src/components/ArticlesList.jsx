@@ -9,7 +9,7 @@ const ArticlesList = ({ articles }) => {
     return (
         <div className=" py-5">
             <div className="d-flex justify-content-between align-items-center mb-4">
-                <h2 className="fw-bold">Articles <span style={{ borderBottom: '3px solid #0d6efd' }}>&nbsp;</span></h2>
+                <h2 className="fw-bold">Articles  </h2>
                 <Dropdown>
                     <Dropdown.Toggle variant="light" id="dropdown-basic">
                         Sort by: {sortType}

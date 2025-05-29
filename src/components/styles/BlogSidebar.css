@@ -1,0 +1,27 @@
+.blog-sidebar {
+    position: sticky;
+    top: 100px; /* Increased to account for header height */
+    max-height: calc(100vh - 120px); /* viewport height minus header and margins */
+    overflow-y: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #6c757d #f8f9fa; /* Firefox */
+}
+
+/* For Webkit browsers like Chrome/Safari */
+.blog-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.blog-sidebar::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+.blog-sidebar::-webkit-scrollbar-thumb {
+    background-color: #6c757d;
+    border-radius: 3px;
+}
+
+/* Hide scrollbar when not hovering */
+.blog-sidebar:not(:hover)::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
