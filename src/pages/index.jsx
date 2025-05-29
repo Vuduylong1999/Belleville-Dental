@@ -9,6 +9,7 @@ import DentalHomePage from './Home';
 import Products from './Products';
 import BlogEducation from './BlogEducation';
 import PatientEdu from './PatientEdu';
+import BlogSingle from '../components/edu/BlogSingle';
 
 function NotFound() {
   return <h1 className='text-center font-bold'> 404 - Not Found </h1>
@@ -23,6 +24,7 @@ export default function AppRouter() {
         <Route path='/home' element={<DentalHomePage></DentalHomePage>} ></Route>
         <Route path='/education/patient' element={<PatientEdu />} ></Route>
         <Route path='/education/professional' element={<BlogEducation />} ></Route>
+        <Route path='/education/researchs' element={<BlogSingle />} ></Route>
         <Route path='/products' element={<Products></Products>} ></Route>
         <Route path='/about-us' element={<AboutUs></AboutUs>} ></Route>
         <Route path='/contact-us' element={<ContactUs></ContactUs>} ></Route>
