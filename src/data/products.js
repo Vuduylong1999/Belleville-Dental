@@ -412,38 +412,76 @@ export const allArticles = [
   },
 ];
 
-const products = [
-  { id: 1, name: "Kids Strawberry Toothpaste", category: "Kids", rating: 4.5, image:KidsStrawberryToothpaste },
-  { id: 2, name: "Electric Toothbrush Pro", category: "Electrical Accessories", rating: 4.8, image:ElectricToothbrushPro },
-  { id: 3, name: "Mint Fresh Toothpaste", category: "Toothpaste", rating: 4.3, image: MintFreshToothpaste},
-  { id: 4, name: "Charcoal Toothbrush", category: "Brushes", rating: 4.6,image: CharcoalToothbrush },
-  { id: 5, name: "Kids Electric Toothbrush", category: "Kids", rating: 4.4, image: KidsElectricToothbrush },
-  { id: 6, name: "Aloe Vera Herbal Paste", category: "Toothpaste", rating: 4.2, image: KidsStrawberryToothpaste},
-  { id: 7, name: "Whitening Toothpaste", category: "Toothpaste", rating: 4.7, image: WhiteningToothpaste },
-  { id: 8, name: "Ultra Soft Brush", category: "Brushes", rating: 4.5, image: UltraSoftBrush },
-  { id: 9, name: "Smart Electric Brush", category: "Electrical Accessories",rating: 4.9, image:SmartElectricBrush  },
-  { id: 10, name: "Fluoride-Free Paste", category: "Toothpaste", rating: 4.0, image: CharcoalToothbrush},
-  { id: 11, name: "Bubble Gum Paste for Kids", category: "Kids", rating: 4.3, image: ElectricToothbrushPro},
-  { id: 12, name: "Triple Action Toothpaste", category: "Toothpaste", rating: 4.6, image: UltraSoftBrush },
-  { id: 13, name: "Dental Floss Pack", category: "Accessories",rating: 4.1, image: WhiteningToothpaste },
-  { id: 14, name: "Plaque Remover Brush", category: "Brushes", rating: 4.4, image: SmartElectricBrush },
-  { id: 15, name: "Tongue Cleaner Tool", category: "Accessories", rating: 4.3, image: MintFreshToothpaste },
-  { id: 16, name: "Bamboo Toothbrush", category: "Brushes", rating: 4.6, image: KidsElectricToothbrush },
-  { id: 17, name: "Antibacterial Toothpaste", category: "Toothpaste", rating: 4.5, image: KidsStrawberryToothpaste },
-  { id: 18, name: "Kids Cartoon Brush Set", category: "Kids", rating: 4.7, image: CharcoalToothbrush },
-  { id: 19, name: "Travel Oral Hygiene Kit", category: "Accessories", rating: 4.2, image: WhiteningToothpaste },
-  { id: 20, name: "Whitening LED Brush", category: "Electrical Accessories",rating: 4.8, image: UltraSoftBrush },
-  { id: 21, name: "Natural Coconut Paste", category: "Toothpaste", rating: 4.4, image: SmartElectricBrush },
-  { id: 22, nam: "Eco Dental Floss", category: "Accessories", rating: 4.2, image: KidsStrawberryToothpaste },
-  { id: 23, name: "Sonic Wave Toothbrush", category: "Electrical Accessories", rating: 4.7, image: KidsElectricToothbrush },
-  { id: 24, name: "Kids Bubble Brush", category: "Kids", rating: 4.3, image: CharcoalToothbrush},
-  { id: 25, name: "Advanced Whitening Paste", category: "Toothpaste", rating: 4.6, image: ElectricToothbrushPro },
-  { id: 26, name: "Silicone Finger Brush", category: "Brushes", rating: 4.1, image: MintFreshToothpaste },
-  { id: 27, name: "Junior Berry Paste", category: "Kids", rating: 4.2, image: SmartElectricBrush },
-  { id: 28, name: "UV Sanitizer for Brush", category: "Electrical Accessories", rating: 4.6, image: UltraSoftBrush },
-  { id: 29, name: "Fluoride Rinse Mouthwash", category: "Accessories", rating: 4.3, image: WhiteningToothpaste },
-  { id: 30, name: "Gentle Touch Toothbrush", category: "Brushes", rating: 4.5, image: ElectricToothbrushPro }
+export const products = [
+    {
+        id: 1,
+        title: "Smart Electric Brush",
+        name: "Advanced Sonic Smart Electric Toothbrush Pro",
+        author: "Anita Jackson",
+        price: "$16.99",
+        mota: "Effectively cleans teeth with sonic vibration technology.",
+        longDescription: "Experience the ultimate in dental care with our Advanced Sonic Smart Electric Toothbrush Pro. Featuring cutting-edge sonic vibration technology, this toothbrush delivers up to 40,000 vibrations per minute for superior plaque removal and gum care. The smart pressure sensor alerts you when you're brushing too hard, while the built-in timer ensures you brush for the dentist-recommended two minutes. With 5 different cleaning modes and a long-lasting battery life of up to 3 weeks, this toothbrush is perfect for maintaining optimal oral health.",
+        img: SmartElectricBrush,
+        tag: "Self Care",
+        rating: 4.8,
+        reviews: [
+            {
+                user: "John D.",
+                rating: 5,
+                date: "2025-05-28",
+                comment: "Best electric toothbrush I've ever used! My teeth feel professionally cleaned every time."
+            }
+        ],
+        features: [
+            "40,000 vibrations per minute",
+            "5 cleaning modes: Clean, White, Polish, Gum Care, Sensitive",
+            "Smart pressure sensor",
+            "2-minute timer with quadrant pacing",
+            "3-week battery life",
+            "Waterproof design"
+        ],
+        specifications: {
+            "Battery Life": "3 weeks",
+            "Charging Time": "12 hours",
+            "Modes": "5",
+            "Vibration Speed": "40,000/min",
+            "Weight": "130g",
+            "Warranty": "2 years"
+        }
+    },
+    {
+        id: 2,
+        title: "Whitening Toothpaste",
+        author: "John Doe",
+        price: "$12.99",
+        mota: "Advanced whitening formula for a brighter smile.",
+        img: WhiteningToothpaste,
+        tag: "Self Care",
+        rating: 4.5
+    },
+    {
+        id: 3,
+        title: "Mint Fresh Toothpaste",
+        author: "Jane Smith",
+        price: "$15.99",
+        mota: "Long-lasting fresh breath and cavity protection.",
+        img: MintFreshToothpaste,
+        tag: "Self Care",
+        rating: 4.6
+    },
+    {
+        id: 4,
+        title: "Ultra Soft Brush",
+        author: "Jane Smith",
+        price: "$14.99",
+        mota: "Gentle on gums, tough on plaque.",
+        img: UltraSoftBrush,
+        tag: "Self Care",
+        rating: 4.7
+    }
 ];
+
+// electricToothbrushes array moved to dental-products.js
 
 const professionalEdu = [
   { title: "Intro to Machine Learning", description: "Foundational course for beginners.", category: "Related Courses" },

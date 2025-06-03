@@ -3,4 +3,23 @@
   padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
-/* ...existing code... */
+/* Search Box Styles */
+.search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}

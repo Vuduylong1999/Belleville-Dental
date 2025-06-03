@@ -1,30 +1,42 @@
 import React from 'react';
+import { Card as RBCard, Button } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Card as RBCard, Button } from 'react-bootstrap';
 
 const CardSlider = ({ cards }) => {
+    const navigate = useNavigate();  
+    const handleCardClick = (cardId) => {
+        const path = window.location.pathname;
+        if (path.includes('/education/patient')) {
+            navigate(`/education/patient/${cardId}`);
+        } else if (path.includes('/education/professional')) {
+            navigate(`/education/professional/${cardId}`);
+        } else if (path.includes('/education/researchs')) {
+            navigate(`/education/researchs/${cardId}`);
+        }
+    };
+
     return (
-        <div className="text-center py-5" style={{ backgroundColor: '#rgba(255, 255, 255, 1)' }}>
+        <div className="container py-3">
             <Swiper
-                modules={[Navigation]}
-                spaceBetween={20}
-                slidesPerView={3.3} // 👈 Số thập phân giúp slide 4 hiện ra một phần
-                navigation
-                loop={false}
+                spaceBetween={30}
                 breakpoints={{
-                    0: { slidesPerView: 1.1 },
-                    768: { slidesPerView: 2.2 },
-                    992: { slidesPerView: 3.3 }, // 👈 tùy chỉnh theo kích thước màn hình
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                    1440: { slidesPerView: 4 },
                 }}
             >
                 {cards.map((item, index) => (
-                    <SwiperSlide key={index}>
-                        <RBCard style={{ backgroundColor: '#eaf6fc', border: 'none' }}>
-                            <RBCard.Img variant="top" src={item.img} />
-                            <RBCard.Body>
+                    <SwiperSlide key={index} style={{ height: 'auto' }}>
+                        <RBCard
+                            style={{ backgroundColor: '#eaf6fc', border: 'none', height: '100%', cursor: 'pointer' }}
+                            onClick={() => handleCardClick(index + 1)}
+                        >
+                            <RBCard.Img variant="top" src={item.img} style={{ objectFit: 'cover' }} />
+                            <RBCard.Body className="d-flex flex-column">
                                 <div className="d-flex mb-3 justify-content-between align-items-center">
                                     <Button variant="dark" size="sm" className="mb-2">
                                         {item.tag}
@@ -34,7 +46,7 @@ const CardSlider = ({ cards }) => {
                                     </RBCard.Subtitle>
                                 </div>
                                 <RBCard.Title className="fw-bold">{item.title}</RBCard.Title>
-                                <RBCard.Text>{item.desc}</RBCard.Text>
+                                <RBCard.Text className="flex-grow-1">{item.desc}</RBCard.Text>
                             </RBCard.Body>
                         </RBCard>
                     </SwiperSlide>

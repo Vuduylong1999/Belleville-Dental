@@ -1,0 +1,84 @@
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: translateY(-5px);
+}
+
+.hover-primary:hover {
+  color: var(--bs-primary) !important;
+}
+
+.article-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.article-content .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.article-content blockquote {
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.social-share-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.social-share-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive image handling */
+.article-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-image:hover {
+  transform: scale(1.02);
+}
+
+/* Tags and categories styling */
+.tag-badge {
+  transition: all 0.2s ease-in-out;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  padding: 0.35rem 0.75rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.tag-badge:hover {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+/* Back navigation styling */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--bs-light);
+  transition: all 0.2s ease-in-out;
+}
+
+.back-link:hover {
+  background-color: var(--bs-primary);
+  color: white !important;
+}
+
+/* Sidebar card hover effects */
+.sidebar-card {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.sidebar-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
