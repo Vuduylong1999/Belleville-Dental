@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
-import avatar from "../assets/avatar.png";
 import { Link, useLocation } from 'react-router-dom';
 import './styles/Header.css';
+import VisitorCounter from './VisitorCounter';
 
 const Header = () => {
-    const location = useLocation();    const isActive = (path) => {
+    const location = useLocation();    
+    const isActive = (path) => {
         if (path === '/home' && location.pathname === '/') return true;
         return location.pathname.startsWith(path);
     };
 
-    return (        <nav className="navbar px-4 py-2">
+    return (
+        <nav className="navbar px-4 py-2">
             <div className="container d-flex justify-content-between align-items-center">
-
-                {/* Logo bên trái */}
+                {/* Logo */}
                 <Link className="navbar-brand d-flex align-items-center" to="/home">
                     <img src={logo} alt="uifry logo" height="30" className="me-2" />
                 </Link>
 
-                {/* Menu giữa */}
+                {/* Menu */}
                 <ul className="navbar-nav flex-row gap-4">
                     <li className="nav-item">
                         <Link className={`nav-link ${isActive('/home') ? 'active' : ''}`} to="/home">Home</Link>
@@ -54,13 +55,13 @@ const Header = () => {
                     <li className="nav-item">
                         <Link className={`nav-link ${isActive('/contact-us') ? 'active' : ''}`} to="/contact-us">Contact</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className={`nav-link ${isActive('/gallery') ? 'active' : ''}`} to="/gallery">Gallery</Link>
+                    </li>
                 </ul>
 
-                {/* Avatar + Book Now */}
-                <div className="d-flex align-items-center">
-                    <img src={avatar} alt="avatar" className="rounded-circle me-2" width="35" height="35" />
-                    <button className="btn btn-primary">Book Now</button>
-                </div>
+                {/* Visitor Counter Component */}
+                <VisitorCounter />
             </div>
         </nav>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-// config-route B2: Sử dụng Routes và Route để gán các path tương ứng 
 import { Routes, Route } from 'react-router-dom';
 import AboutUs from './AboutUs.jsx';
 import ContactUs from './ContactUs.jsx';
@@ -10,6 +9,7 @@ import PatientEdu from './PatientEdu.jsx';
 import BlogSingle from '../components/edu/BlogSingle.jsx';
 import BlogResearchs from './BlogResearchs.jsx';
 import ProductDetail from './ProductDetail.jsx';
+import Gallery from './Gallery.jsx';
 
 function NotFound() {
   return (
@@ -22,24 +22,40 @@ function NotFound() {
 
 export default function AppRouter() {
   return (
-    <>
-      <Routes>
+    <Routes>
+      {/* Home Routes */}
+      <Route path="/" element={<DentalHomePage />} />
+      <Route path="/home" element={<DentalHomePage />} />
+      
+      {/* Education Routes */}
+      <Route path="/education">
+        <Route path="patient">
+          <Route index element={<PatientEdu />} />
+          <Route path=":id" element={<BlogSingle />} />
+        </Route>
+        <Route path="professional">
+          <Route index element={<BlogEducation />} />
+          <Route path=":id" element={<BlogSingle />} />
+        </Route>
+        <Route path="researchs">
+          <Route index element={<BlogResearchs />} />
+          <Route path=":id" element={<BlogSingle />} />
+        </Route>
+      </Route>
 
-        <Route path='/' element={<DentalHomePage></DentalHomePage>} ></Route>
-        <Route path='/home' element={<DentalHomePage></DentalHomePage>} ></Route>          
-        <Route path='/education/patient' element={<PatientEdu />} />
-        <Route path='/education/patient/:id' element={<BlogSingle />} />
-        <Route path='/education/professional' element={<BlogEducation />} />
-        <Route path='/education/professional/:id' element={<BlogSingle />} />
-        <Route path='/education/researchs' element={<BlogResearchs />} />
-        <Route path='/education/researchs/:id' element={<BlogSingle />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/products/:id' element={<ProductDetail />} />
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/contact-us' element={<ContactUs />} />
-        <Route path='*' element={<NotFound />} />
+      {/* Product Routes */}
+      <Route path="/products">
+        <Route index element={<Products />} />
+        <Route path=":id" element={<ProductDetail />} />
+      </Route>
 
-      </Routes>
-    </>
-  )
+      {/* Other Routes */}
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/contact-us" element={<ContactUs />} />
+
+      {/* 404 Route */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
 }
